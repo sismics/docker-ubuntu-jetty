@@ -2,7 +2,7 @@
 # Dockerfile for Ubuntu + Jetty Web Server
 #
 
-FROM sismics/ubuntu-java:8.191
+FROM sismics/ubuntu-java:11
 MAINTAINER Jean-Marc Tremeaux <jm.tremeaux@sismics.com>
 
 # Download and install Jetty
