@@ -2,11 +2,11 @@
 # Dockerfile for Ubuntu + Jetty Web Server
 #
 
-FROM sismics/ubuntu-java:11.0.8
+FROM sismics/ubuntu-java:11.0.18
 MAINTAINER Jean-Marc Tremeaux <jm.tremeaux@sismics.com>
 
 # Download and install Jetty
-ENV JETTY_VERSION 9.4.36.v20210114
+ENV JETTY_VERSION 9.4.51.v20230217
 RUN wget -nv -O /tmp/jetty.tar.gz \
     "https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/${JETTY_VERSION}/jetty-distribution-${JETTY_VERSION}.tar.gz" \
     && tar xzf /tmp/jetty.tar.gz -C /opt \
