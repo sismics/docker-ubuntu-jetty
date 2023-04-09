@@ -8,7 +8,7 @@ MAINTAINER Jean-Marc Tremeaux <jm.tremeaux@sismics.com>
 # Download and install Jetty
 ENV JETTY_VERSION 11.0.14
 RUN wget -nv -O /tmp/jetty.tar.gz \
-    "https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/11.0.14//${JETTY_VERSION}/jetty-home-${JETTY_VERSION}.tar.gz" \
+    "https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/${JETTY_VERSION}/jetty-home-${JETTY_VERSION}.tar.gz" \
     && tar xzf /tmp/jetty.tar.gz -C /opt \
     && mv /opt/jetty* /opt/jetty \
     && useradd jetty -U -s /bin/false \
